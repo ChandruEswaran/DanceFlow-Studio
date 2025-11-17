@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DanceFlow Studio - Premium Dance Classes & Professional Instruction</title>
+    <meta name="description" content="Discover the art of movement at DanceFlow Studio. Join our world-class dance classes including contemporary, hip-hop, ballet, and Latin dance with expert instructors in a supportive community." />
+    <meta name="keywords" content="dance studio, dance classes, contemporary dance, hip-hop, ballet, Latin dance, dance instruction, professional dancers, dance community" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.onspace.ai" />
+    <meta property="og:title" content="DanceFlow Studio - Premium Dance Classes & Professional Instruction" />
+    <meta property="og:description" content="Discover the art of movement at DanceFlow Studio. Join our world-class dance classes including contemporary, hip-hop, ballet, and Latin dance with expert instructors in a supportive community." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=630&fit=crop" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DanceFlow Studio - Premium Dance Classes & Professional Instruction" />
+    <meta name="twitter:description" content="Discover the art of movement at DanceFlow Studio. Join our world-class dance classes including contemporary, hip-hop, ballet, and Latin dance with expert instructors in a supportive community." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=630&fit=crop" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/>
+                    </svg>
+                    <span class="logo-text">DanceFlow Studio</span>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#classes" class="nav-link">Classes</a>
+                    <a href="#instructors" class="nav-link">Instructors</a>
+                    <a href="#footer" class="nav-link">About</a>
+                    <button class="btn btn-primary">Book Now</button>
+                </nav>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#classes" class="mobile-nav-link" onclick="closeMobileMenu()">Classes</a>
+                <a href="#instructors" class="mobile-nav-link" onclick="closeMobileMenu()">Instructors</a>
+                <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+                <button class="btn btn-primary mobile-book-btn">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1920&h=1080&fit=crop&auto=format" alt="Professional dancers in studio">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Dance Your Dreams Into Reality</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Experience the magic of movement at our world-class dance studio. From ballet to hip-hop, 
+                        contemporary to salsa - discover your passion with expert instructors.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="scrollToClasses()">
+                            Book Your Class
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        
+                        <button class="btn btn-outline btn-large">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                                <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                            </svg>
+                            Watch Preview
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="hero-images">
+                    <div class="hero-image-grid">
+                        <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=300&h=400&fit=crop&auto=format" alt="Ballet dancer" class="hero-img hero-img-1">
+                        <img src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?w=300&h=400&fit=crop&auto=format" alt="Contemporary dance" class="hero-img hero-img-2">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M13 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value">2,500+</div>
+                    <div class="stat-label">Happy Dancers</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M14 20h4.5a2.5 2.5 0 0 0 0-5H14M6 9V4.5a2.5 2.5 0 0 1 5 0V9M18 15v4.5a2.5 2.5 0 0 1-5 0V15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label">Expert Instructors</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Weekly Classes</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="featured-classes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Classes</h2>
+                <p class="section-description">
+                    Discover our most popular dance classes taught by world-class instructors. 
+                    Find your rhythm and join our vibrant dance community.
+                </p>
+            </div>
+
+            <div class="class-filters">
+                <div class="filter-search">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search classes, instructors..." onkeyup="filterClasses()">
+                </div>
+                
+                <select id="levelFilter" onchange="filterClasses()">
+                    <option value="all">All Levels</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="All Levels">All Levels</option>
+                </select>
+                
+                <select id="styleFilter" onchange="filterClasses()">
+                    <option value="all">All Styles</option>
+                    <option value="Contemporary">Contemporary</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Ballet">Ballet</option>
+                    <option value="Latin">Latin</option>
+                    <option value="Jazz">Jazz</option>
+                </select>
+            </div>
+
+            <div class="classes-grid" id="classesGrid">
+                <!-- Inside - JavaScript -->
+            </div>
+
+            <div class="section-footer">
+                <button class="btn btn-outline btn-large" onclick="showAllClasses()">View All Classes</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructors" class="instructors">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Instructors</h2>
+                <p class="section-description">
+                    Learn from world-class professionals who are passionate about sharing 
+                    their expertise and helping you achieve your dance goals.
+                </p>
+            </div>
+
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&auto=format" alt="Sarah Johnson">
+                        <div class="instructor-overlay">
+                            <h3 class="instructor-name">Sarah Johnson</h3>
+                            <p class="instructor-specialty">Contemporary & Modern</p>
+                        </div>
+                    </div>
+                    <div class="instructor-content">
+                        <div class="instructor-stats">
+                            <div class="instructor-rating">
+                                <div class="stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <span class="rating-value">4.9</span>
+                            </div>
+                            <div class="instructor-students">800+ students</div>
+                            <div class="instructor-experience">12 years exp.</div>
+                        </div>
+                        <p class="instructor-bio">
+                            Former principal dancer with the National Ballet Company, Sarah brings grace and technique to every class.
+                        </p>
+                        <div class="instructor-achievements">
+                            <h4>Achievements</h4>
+                            <ul>
+                                <li>Prima Ballerina Award</li>
+                                <li>Certified Yoga Instructor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&auto=format" alt="Marcus Davis">
+                        <div class="instructor-overlay">
+                            <h3 class="instructor-name">Marcus Davis</h3>
+                            <p class="instructor-specialty">Hip-Hop & Street Dance</p>
+                        </div>
+                    </div>
+                    <div class="instructor-content">
+                        <div class="instructor-stats">
+                            <div class="instructor-rating">
+                                <div class="stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <span class="rating-value">4.8</span>
+                            </div>
+                            <div class="instructor-students">650+ students</div>
+                            <div class="instructor-experience">8 years exp.</div>
+                        </div>
+                        <p class="instructor-bio">
+                            International street dance champion who has performed with top recording artists worldwide.
+                        </p>
+                        <div class="instructor-achievements">
+                            <h4>Achievements</h4>
+                            <ul>
+                                <li>World Hip-Hop Champion</li>
+                                <li>Choreographer for Major Tours</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=300&q=80" alt="Emma Rodriguez">
+                        <div class="instructor-overlay">
+                            <h3 class="instructor-name">Emma Rodriguez</h3>
+                            <p class="instructor-specialty">Classical Ballet</p>
+                        </div>
+                    </div>
+                    <div class="instructor-content">
+                        <div class="instructor-stats">
+                            <div class="instructor-rating">
+                                <div class="stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                            <div class="instructor-students">920+ students</div>
+                            <div class="instructor-experience">15 years exp.</div>
+                        </div>
+                        <p class="instructor-bio">
+                            Trained at the Royal Ballet School, Emma specializes in classical technique and pointe work.
+                        </p>
+                        <div class="instructor-achievements">
+                            <h4>Achievements</h4>
+                            <ul>
+                                <li>Royal Ballet Graduate</li>
+                                <li>International Ballet Judge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Dancers Say</h2>
+                <p class="section-description">
+                    Don't just take our word for it. Hear from our amazing community of dancers 
+                    who have found their passion and voice through movement.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                        </svg>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "DanceFlow Studio transformed my passion into a career. The instructors are incredible and the community is so supportive. I've grown so much as a dancer here."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Jessica Chen">
+                        <div class="author-info">
+                            <h4>Jessica Chen</h4>
+                            <p>Professional Dancer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                        </svg>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "I started with zero dance experience and now I can't imagine life without it. The beginner classes are perfect and the atmosphere is so welcoming."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&auto=format" alt="Michael Torres">
+                        <div class="author-info">
+                            <h4>Michael Torres</h4>
+                            <p>Beginner Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                        </svg>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The technique I've learned here is phenomenal. Every class challenges me to be better. This studio truly cares about each student's growth."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&auto=format" alt="Amanda Foster">
+                        <div class="author-info">
+                            <h4>Amanda Foster</h4>
+                            <p>Advanced Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="currentColor"/>
+                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="currentColor"/>
+                        </svg>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The hip-hop classes are fire! Marcus brings so much energy and teaches the latest moves. I've improved my freestyle and confidence so much."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&auto=format" alt="David Kim">
+                        <div class="author-info">
+                            <h4>David Kim</h4>
+                            <p>Hip-Hop Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/>
+                        </svg>
+                        <span>DanceFlow</span>
+                    </div>
+                    <p class="footer-description">
+                        Discover the art of movement at our premier dance studio. Join our community of passionate dancers.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#footer">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#classesGrid">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Shillong City, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>(+91) 123-DANCE</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>India@danceflow.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M23 7a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 7z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DanceFlow Studio. All rights reserved. Made with ❤️ for dancers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Class</h2>
+                <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="selectedClass">Selected Class</label>
+                            <input type="text" id="selectedClass" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectedInstructor">Instructor</label>
+                            <input type="text" id="selectedInstructor" readonly>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingDate">Select Date</label>
+                            <select id="bookingDate" required>
+                                <option value="">Choose available date</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingTime">Select Time</label>
+                            <select id="bookingTime" required>
+                                <option value="">Choose time slot</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentName">Full Name</label>
+                        <input type="text" id="studentName" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentEmail">Email Address</label>
+                            <input type="email" id="studentEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentPhone">Phone Number</label>
+                            <input type="tel" id="studentPhone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="danceExperience">Dance Experience</label>
+                        <select id="danceExperience">
+                            <option value="">Select your experience level</option>
+                            <option value="complete-beginner">Complete Beginner</option>
+                            <option value="some-experience">Some Experience</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests (Optional)</label>
+                        <textarea id="specialRequests" rows="3" placeholder="Any special requirements or questions?"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Book Class</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <span id="toastMessage"></span>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
