@@ -74,7 +74,7 @@ Folder: /root
 <strong>Chandru Eswaran</strong><br>
 <strong>Full Stack Learner | AWS Cloud Enthusiastic</strong><br><br>
   
-Email: [chandrudakshina@gmail.com](mailto:chandrudakshina@gmail.com)<br>
+Email: [chandrudakshina@gmail.com](mailto:chandrueswaran.d@gmail.com)<br>
 GitHub: [GitHub/ChandruEswaran](https://github.com/ChandruEswaran)<br>
 Linkedin: [LinkedIn/Chandru-Eswaran](https://www.linkedin.com/in/chandru-eswaran-d)<br>
 </p>
